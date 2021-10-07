@@ -1,3 +1,43 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://niko-consulting.de/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = ''
+theme = "hugo-coder"
+
+[params]
+author = "Nikolay Orozov"
+info = "Freelance Solutions Architect and Developer"
+keywords = "orozov"
+avatarURL = "images/Logo-NIKO-Consulting.png"
+footerContent = ""
+dateFormat = "January 2, 2006"
+hideFooter = false
+hideCredits = true
+hideCopyright = false
+since = 2014
+
+colorScheme = "light"
+hidecolorschemetoggle = true
+
+customCSS = ["css/my.css"]
+#customSCSS = ["scss/custom.scss"]
+#customJS = ["js/custom.js"]
+
+
+[[params.social]]
+  name = "Xing"
+  icon = "fa fa-xing fa-2x"
+  weight = 1
+  url = "https://www.xing.com/profile/Nikolay_Orozov/"
+  target = "_blank"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/nikolay-orozov-1747054b/"
+  target = "_blank"
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 3
+  url = "https://github.com/silverdonkey/"
+  target = "_blank"

@@ -1,0 +1,12 @@
+body {
+  background-color: #fff;
+}
+.avatar img {
+  width: auto;
+  height: auto;
+  border-radius: 0% !important;
+
+  @media only screen and (max-width: 768px) {
+    width: 10rem;
+  }
+}
