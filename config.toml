@@ -1,7 +1,8 @@
-baseURL = 'https://niko-consulting.de/'
+baseURL = 'https://silverdonkey.github.io/niko-consulting-website'
 languageCode = 'en-us'
 title = ''
 theme = "hugo-coder"
+publishDir = "docs"
 
 [params]
 author = "Nikolay Orozov"
