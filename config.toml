@@ -1,6 +1,6 @@
 baseURL = 'https://silverdonkey.github.io/niko-consulting-website/'
 languageCode = 'en-us'
-title = ''
+title = 'niko'
 theme = "hugo-coder"
 publishDir = "docs"
 
