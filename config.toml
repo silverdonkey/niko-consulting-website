@@ -1,4 +1,4 @@
-baseURL = 'https://www.niko-consulting.de'
+baseURL = 'https://niko-consulting.de'
 languageCode = 'en-us'
 title = ''
 theme = "hugo-coder"
