@@ -7,7 +7,7 @@ publishDir = "docs"
 [params]
 author = "Nikolay Orozov"
 info = "Freelance Solutions Architect and Developer"
-keywords = "orozov"
+keywords = "orozov, niko-consulting"
 avatarURL = "images/Logo-NIKO-Consulting.png"
 footerContent = ""
 dateFormat = "January 2, 2006"
