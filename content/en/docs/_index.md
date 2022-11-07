@@ -1,9 +1,9 @@
 
 ---
-title: "Examples"
-linkTitle: "Examples"
-weight: 3
+title: "Examples Overview"
+linkTitle: "Docs"
+weight: 1
 date: 2022-01-05
 description: >
-  Demos, concepts, how-tos, etc.
+  Demos, solution concepts, how-tos, etc.
 ---
