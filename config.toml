@@ -1,5 +1,6 @@
 baseURL = "/"
-title = "Home"
+title = "NIKO Consulting"
+description = "Nikolay Orozov - Freelance IT Consultant, Solutions Architect and Software Developer"
 
 # Language settings
 contentDir = "content/en"
