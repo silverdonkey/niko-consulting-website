@@ -1,6 +1,5 @@
 baseURL = "/"
 title = "NIKO Consulting"
-description = "Nikolay Orozov - Freelance IT Consultant, Solutions Architect and Software Developer"
 
 # Language settings
 contentDir = "content/en"
@@ -79,6 +78,7 @@ section = ["HTML", "print", "RSS"]
 
 [params]
 copyright = "Nikolay Orozov"
+description = "Nikolay Orozov - Freelance IT Consultant, Solutions Architect and Software Developer"
 # privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
