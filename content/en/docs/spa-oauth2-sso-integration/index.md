@@ -11,8 +11,11 @@ description: >
 ### Requirements and Context
 
 1. Users and roles management: define roles and rights, including the ability to maintain users according to the company's policies.
-2. Authentication: provide seamless login functionality to the SPA for Data Developers, Data Managers and other SMEs.
-3. Authorization: only authorized users should be allowed to access the application.
+2. Authentication: provide seamless login (Single-Sign-On) functionality to the SPA for Data Developers, Data Managers and other SMEs.
+3. Authorization: only authorized users should be allowed to access the application's functionality according to the specified role and granted privileges(Principle of Least Privilege)
+4. Architecture decision for
+    * Identity and Access Management (Keycloak vs company's Active Directory)
+    * Authentication and Authorization protocols (SAML, OpenID Connect, OAuth2)
 
 ## Solution
 

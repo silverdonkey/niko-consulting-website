@@ -3,7 +3,7 @@ title: "Solution Concept: GitLab-CI Data Pipelines"
 date: 2020-11-05
 weight: 2
 description: >
-  Data deployment and Data test pipelines with GitLab-CI <br/>
+  Data deployment, Data test, GitLab-CI <br/>
   [Project News](https://www.heise.de/news/Next-DB-Navigator-Bessere-Oberflaeche-und-kuriose-Fehler-7310732.html)
 ---
 
@@ -18,7 +18,7 @@ Solution concept for Data Deployment and Data Test Pipelines and implementation 
 
 ### What does 'Data Deployment' mean?
 
-In a microservice landscape, data and software can be developed separately and only at runtime in one environment (stage) they are "linked" together. Such a separation is often predetermined by the organizational structure: different departments and teams are responsible for software development and data management. A CI/CD approach then inevitably also affects data management and requires that **Data** is also deployable accordingly to the different stages, just like **software**. In such a context, a microservice consists of **software and data** that are developed independently of one another. Before going live, however, the microservice(s) must be extensively tested "as a whole" - i.e. software and data.
+In a microservice landscape, data and software can be developed separately and only at runtime in one environment (stage) they are "linked" together. Such a separation is often predetermined by the organizational structure: different departments and teams are responsible for software development and data management. A CI/CD approach then inevitably also affects data management and requires that **data** is also deployable accordingly to the different stages, just like **software**. In such a context, a microservice consists of **software and data** that are developed independently of one another. Before going live, however, the microservice(s) must be extensively tested "as a whole" - i.e. software and data.
 
 ### What does 'Data Test' mean?
 
@@ -34,24 +34,27 @@ A data deployment pipeline orchestrates the deployment and testing of software a
 
 Main Features of the Pipeline:
 
-- Automatic rollback of all dependent Microservices (dependency in terms of "shared data version")
-  - when deployment of one failed or
-  - when a Quality Gate did not pass
+- Automatic rollback of all dependent microservices (dependency in terms of "shared data version")
+  - when deployment failed (one or more service deployments) or
+  - when a Quality Gate did not pass (QGs can be configured as "allowed to fail")
 - Queueing - orchestration of parallel running pipelines
-- Notification of 'Start', 'Success' or 'Failure' (Rocket.Chat)
+  - at the time of developing the solution GitLab did not provide the feature (in contrast [Jenkins](https://www.jenkins.io/) provides this out-of-the-box), therefor we had to implement it
+- Notification (Rocket.Chat) of 'Start' and 'Finish' (with details like 'Success', 'Failure' and 'Cause')
 
 ---
 
 Tech Environment:
 
 - [AWS Cloud](https://aws.amazon.com/)
-  - Data is provided via AWS S3 Service
+  - App and backend services run as Docker containers
+  - Data is provided via AWS S3 Service (S3 Object Store)
+  - S3-buckets separated by purpose (preview, live), with access only from specified environments, and in different accounts (prod, non-prod)
   - Configuration of Data-Version via AWS SSM Parameters
 - [Kuberentes](https://kubernetes.io/) on AWS - [EKS](https://aws.amazon.com/eks/)
 - [Docker](https://www.docker.com/resources/what-container) on AWS - [ECR](https://aws.amazon.com/ecr/)
 - [Helm](https://helm.sh/docs/topics/architecture/) (Helmchart, Helmfile)
-- [GitOps](https://www.gitops.tech/)
-- [GitLab-CI](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/)
+- [GitOps](https://www.gitops.tech/) - Continuous Deployment
+- [GitLab-CI](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/) - Continuous Integration
 
 ---
 
