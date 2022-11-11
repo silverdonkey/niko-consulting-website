@@ -3,7 +3,7 @@ title: "Solution Concept: docToolchain Integration"
 date: 2021-05-24
 weight: 2
 description: >
-  API Management, Service Catalogue <br/>
+  API Management, Service Catalogue (aka API Developer Portal) <br/>
   [GitHub Repo](https://github.com/silverdonkey/spring-boot-openapi-doctoolchain)
 ---
 
@@ -15,11 +15,12 @@ Solution concept and PoC for docToolchain integration
 
 ### Requirements and Context
 
-* SwaggerHub is the tool used for API development and documentation (e.g. Service Catalogue).
+* SwaggerHub is the tool used for API design, development and documentation (e.g. Service Catalogue).
 * Confluence is the single source of truth for any type of documentation
 including software architecture documentation, design decisions, module specifications, developer how-tos, user guides, meeting notes, etc.
 * Goal: follow the [Doc-as-Code](https://www.writethedocs.org/guide/docs-as-code/) approach for documentation
   * Use the same tools and workflows as development teams
+  * Goal: fully integrated API Management: connect Publisher Portal, Developer Portal and API Gateway
 
 * General Requirements:
   1. Publish all API related documentation (interfaces, implementations, OpenAP definitions) to Confluence.
