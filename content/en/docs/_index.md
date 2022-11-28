@@ -2,7 +2,7 @@
 ---
 title: "Profile Overview"
 linkTitle: "Profile"
-weight: 1
+weight: 2
 date: 2022-01-05
 description: >
   Full profile incl. list of projects will be provided on request.
@@ -25,7 +25,7 @@ Software Development:
 * 4 years in-house software development: IT-Controlling and IT-Financial Management
 * Roles: Lead Software Architect, Fullstack Software Developer
 
-## Main focus and expertise
+## Main Focus and Expertise
 
 Software Architecture and Development
   * Cloud native (AWS, Azure)
