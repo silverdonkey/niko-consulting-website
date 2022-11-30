@@ -22,8 +22,8 @@ IT Consulting:
   * Roles: Solutions Architect, Lead System Architect, Consultant
 
 Software Development:
-* 4 years in-house software development: IT-Controlling and IT-Financial Management
-* Roles: Lead Software Architect, Fullstack Software Developer
+  * 4 years in-house software development: IT-Controlling and IT-Financial Management
+  * Roles: Lead Software Architect, Fullstack Software Developer
 
 ## Main Focus and Expertise
 
