@@ -10,29 +10,28 @@ description: >
 
 
 ## Personal Information
+Name: Nikolay Orozov
+
 Education: Master of Computer Sciences (Karlsruhe Institute of Technology)
 
-Location: Frankfurt am Main/Germany or Remote
+Location: Frankfurt am Main
 
 ## Professional Background
 
 IT Consulting:
-  * More than 14 years in international IT-Projects across industries, from Start-ups to global players
-  * Industries: Automotive, Banking, eCommerce, Insurance, Telecom, Transportation&Logistics
-  * Roles: Solutions Architect, Lead System Architect, Consultant
+* More than 14 years in international IT-Projects across industries, from Start-ups to global players
+* Industries: Automotive, Banking, eCommerce, Insurance, Telecom, Transportation&Logistics
+* Roles: Solutions Architect, Lead System Architect, Consultant
 
 Software Development:
-  * 4 years in-house software development: IT-Controlling and IT-Financial Management
-  * Roles: Lead Software Architect, Fullstack Software Developer
+* 4 years in-house software development: IT-Controlling and IT-Financial Management
+* Roles: Lead Software Architect, Fullstack Software Developer
 
 ## Main Focus and Expertise
 
-Software Architecture and Development
-  * Cloud native (AWS, Azure)
-  * Microservices, Spring, JEE, SQL/NoSQL
-  * CI/CD, DevOps
-
-Cloud and Web Engineering
-  * Cloud native, Cloud migration, Web Services, API Design
-  * Web Apps, Websites, Webshops
-  * Integration of mobile and payment providers
+* Cloud-based Software Solutions (AWS, Azure)
+* Agile Software Development and Operations (DevOps)
+* Scalable, flexible and maintainable Software Architectures
+* Microservices, API Design and Integrations
+* Frontend and backend technologies and frameworks (Java, PHP, HTML, Vue.js, Spring Framework, SQL/NoSQL)
+* Virtualization technologies (Docker, Kubernetes)
