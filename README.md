@@ -138,3 +138,14 @@ See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/instal
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
+
+
+## How-to
+
+1. Error: from config: failed to resolve output format "print" from site config
+
+To solve it, just clean the hugo_cache:
+
+   ```bash
+sudo rm -rf /var/folders/l6/tj48k4bn3l3bwwhnz4mz2n540000gn/T/hugo_cache/
+   ```
