@@ -32,6 +32,6 @@ Software Development:
 * Cloud-based Software Solutions (AWS, Azure)
 * Agile Software Development and Operations (DevOps)
 * Scalable, flexible and maintainable Software Architectures
-* Microservices, API Design and Integrations
+* Domain Driven Design, Microservices, API Design and Integrations
 * Frontend and backend technologies and frameworks (Java, PHP, HTML, Vue.js, Spring Framework, SQL/NoSQL)
 * Virtualization technologies (Docker, Kubernetes)
