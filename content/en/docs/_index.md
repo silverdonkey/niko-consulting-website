@@ -12,7 +12,7 @@ description: >
 ## Personal Information
 Name: Nikolay Orozov
 
-Education: Master of Computer Sciences (Karlsruhe Institute of Technology)
+Education: Master of Computer Sciences ([Karlsruhe Institute of Technology](https://www.informatik.kit.edu/))
 
 Location: Frankfurt am Main
 
