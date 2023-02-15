@@ -55,6 +55,7 @@ Strategies for migrating legacy (monolitic) apps
 - Migrate an existing Web-based application to the Cloud using the 2. Migration Strategy - "Cloud Optimized Migration"
 - Produce a cloud-native reference application on [AWS Cloud](https://aws.amazon.com/) to showcase using Laravel, Docker, GitHub and Cloud managed services to build a simplistic *minimal* php based application.
 
+---
 ### Existing Monolitic Web App
 Architecture Overview
 {{< imgproc monolitic-web-app-architecture Resize "1200x" >}}
@@ -74,8 +75,11 @@ Cloud Optimized Web App Architecture (production)<br />
 *Service Aggregator Pattern / API Gateway
 {{< /imgproc >}}
 
+---
 ### Reference Web App
-
+TODO:
+- add screenshot of the app
+- add link to the GitHub repo
 #### Basic Features
 - Sign in
 - Sign out
@@ -98,5 +102,3 @@ Cloud Optimized Web App Architecture (production)<br />
 - Load Balancing (ELB)
 - Data stores: MySql/MariaDB (RDS)
 - Caching, Session management, Queueing (MemoryDB Cluster for Redis)
-
----
