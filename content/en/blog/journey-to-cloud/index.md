@@ -13,13 +13,14 @@ Solution concept and PoC for Cloud Migration
 ## Project Context and Goals
 - Establish a workflow and best practices for
   - Migration (and modernization) of existing Web apps to the Cloud
-  - Development of new Web apps for the Cloud - "Cloud first"
-- Code base and version control (GitHub)
-- Use Docker for local development and in production (Containerization)
-- Automate build and deployment: CI/CD Pipeline to build, test and deploy in the Cloud (GitHub Actions, AWS CodeBuild)
+  - Development of new Web apps for the Cloud - "Cloud first approach"
+  - Proof of concept
+- Automate build and deployment:
+  - CI/CD Pipeline to build, test and deploy in the Cloud
+  - Evaluate GitHub Actions, AWS CodeBuild
   - Evaluate Rolling Deployment vs Blue-Green Deployment
 - Use Cloud native technologies and tools
-- No vendor lock-in
+  - no vendor lock-in
 
 ## Cloud Migration Strategies
 
@@ -80,18 +81,21 @@ Cloud Optimized Web App Architecture (production)<br />
 TODO:
 - add screenshot of the app
 - add link to the GitHub repo
+
 #### Basic Features
-- Sign in
-- Sign out
-- Register an account
+- Sign in and out
+- Registration flow
+- password reset flows
 - Review and Edit user's profile
 
 #### Non-Functional Requirements of the Reference App
 - High avalability
 - (Optional) Scale out and in automatically to meet increased traffic
 - Support an agile development process, including CI/CD
-- For simplicity: support *only* traditional Web front ends (no SPA, no mobile clients)
-- The design should support cross-platform development and cross-platform hosting (no cloud vendor lock-in)
+- For simplicity, support *only* traditional Web front ends (no SPA, no mobile clients)
+- The design should support
+  - cross-platform development (no platform lock-in) and
+  - cross-platform hosting (no cloud vendor lock-in)
 
 #### Evaluated and leveraged technologies and tools
 - GitHub-Actions, CodeBuild
@@ -103,4 +107,21 @@ TODO:
 - Data stores: MySql/MariaDB (RDS)
 - Caching, Session management, Queueing (MemoryDB Cluster for Redis)
 
-### Reference GitHub Repo
+
+## Summary and Outlook
+How would a Cloud-native architecture look like?
+
+Here are some suggestions:
+{{< imgproc cloud-native-web-app-architecture Resize "1200x" >}}
+Cloud-native Web App Architecture<br />
+Microservices, Event-Driven Architecture, API Gateway
+{{< /imgproc >}}
+
+- Should be required in the future that multiple front-end clients must be supported (SPA, mobile clients) and/or exposing many complex APIs
+  - Introduce an API Gateway or even API Management
+- If appropriate - move from "single/shared database" model to "share nothing" model where each microservice owns its data
+- Event Driven Architecture: use events for communication between microservices, in a decoupled, reliable and asynchronous manner
+  - For local development RabbitMQ can be used as a Message Broker
+  - In the AWS Cloud use a fully managed integration message broker - [Amazon MQ](https://aws.amazon.com/de/amazon-mq/) (supports Active MQ and RabbitMQ)
+- Serverless: consider using a single function where sufficient (not customer-facing, single operation) instead of developing and maintaining a full microservice
+- Configure centralized logging - CloudWatch
