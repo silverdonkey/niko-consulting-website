@@ -131,14 +131,14 @@ TODO:
 - Data stores: MySql/MariaDB (RDS)
 - Caching, Session management, Queueing (MemoryDB Cluster for Redis)
 
-#### Development Workflow for Dockerized Web Apps
+#### DevOps Workflow for Dockerized Web Apps
 
-Local Development Workflow for Dockerized Web Apps
+Local Development Workflow
 {{< imgproc local-dev-workflow-docker Resize "1200x" >}}
 Local Dev Workflow
 {{< /imgproc >}}
 
-DevOps Workflow for Dockerized Web Apps
+DevOps Workflow on AWS
 {{< imgproc devops-workflow-cloud Resize "1200x" >}}
 DevOps Workflow
 {{< /imgproc >}}
