@@ -11,16 +11,16 @@ Solution concept and PoC for Cloud Migration
 {{% /pageinfo %}}
 
 ## Project Context and Goals
-- Establish a workflow and best practices for
+- Establish a DevOps workflow and best practices for
   - Migration (and modernization) of existing Web apps to the Cloud
   - Development of new Web apps for the Cloud - "Cloud first approach"
-  - Proof of concept
-- Automate build and deployment:
+- Establish an end-to-end DevOps environment that supports Continuous Integration/Continuous Deployment (CI/CD)
   - CI/CD Pipeline to build, test and deploy in the Cloud
   - Evaluate GitHub Actions, AWS CodeBuild
   - Evaluate Rolling Deployment vs Blue-Green Deployment
 - Use Cloud native technologies and tools
   - no vendor lock-in
+- Proof of concept
 
 ## Cloud Migration Strategies
 
@@ -54,10 +54,10 @@ Strategies for migrating legacy (monolitic) apps
 
 ## Proof of Concept Goals
 - Migrate an existing Web-based application to the Cloud using the 2. Migration Strategy - "Cloud Optimized Migration"
-- Produce a cloud-native reference application on [AWS Cloud](https://aws.amazon.com/) to showcase using Laravel, Docker, GitHub and Cloud managed services to build a simplistic *minimal* php based application.
+- Produce a cloud-native reference application on [AWS Cloud](https://aws.amazon.com/) to showcase using Laravel, Docker, GitHub, Cloud managed services and CI/CD pipeline to build a simplistic *minimal* php based application.
 
 ---
-### Existing Monolitic Web App
+### Migration of a (monolitic) Web App
 Architecture Overview
 {{< imgproc monolitic-web-app-architecture Resize "1200x" >}}
 Monolitic Web App Architecture, deployt on-premises
@@ -77,46 +77,16 @@ Cloud Optimized Web App Architecture (production)<br />
 {{< /imgproc >}}
 
 ---
-### Reference Web App
-TODO:
-- add screenshot of the app
-- add link to the GitHub repo
 
-#### Basic Features
-- Sign in and out
-- Registration flow
-- password reset flows
-- Review and Edit user's profile
+### Summary and Outlook
+How would a Cloud-native architecture look like? Here are some recommendations.
 
-#### Non-Functional Requirements of the Reference App
-- High avalability
-- (Optional) Scale out and in automatically to meet increased traffic
-- Support an agile development process, including CI/CD
-- For simplicity, support *only* traditional Web front ends (no SPA, no mobile clients)
-- The design should support
-  - cross-platform development (no platform lock-in) and
-  - cross-platform hosting (no cloud vendor lock-in)
-
-#### Evaluated and leveraged technologies and tools
-- GitHub-Actions, CodeBuild
-- S3 Service (storage, configuration, container images)
-- Secrets Manager (SSM)
-- Container Registry - private registry / ECR
-- Container Orchestrator and Clustering - EKS/ECS
-- Load Balancing (ELB)
-- Data stores: MySql/MariaDB (RDS)
-- Caching, Session management, Queueing (MemoryDB Cluster for Redis)
-
-
-## Summary and Outlook
-How would a Cloud-native architecture look like?
-
-Here are some suggestions:
 {{< imgproc cloud-native-web-app-architecture Resize "1200x" >}}
 Cloud-native Web App Architecture<br />
 Microservices, Event-Driven Architecture, API Gateway
 {{< /imgproc >}}
 
+- Topics not touched: Security, backup services, monitoring
 - Should be required in the future that multiple front-end clients must be supported (SPA, mobile clients) and/or exposing many complex APIs
   - Introduce an API Gateway or even API Management
 - If appropriate - move from "single/shared database" model to "share nothing" model where each microservice owns its data
@@ -125,3 +95,50 @@ Microservices, Event-Driven Architecture, API Gateway
   - In the AWS Cloud use a fully managed integration message broker - [Amazon MQ](https://aws.amazon.com/de/amazon-mq/) (supports Active MQ and RabbitMQ)
 - Serverless: consider using a single function where sufficient (not customer-facing, single operation) instead of developing and maintaining a full microservice
 - Configure centralized logging - CloudWatch
+
+### Reference Web App
+
+TODO:
+
+- add screenshot of the app
+- add link to the GitHub repo
+
+#### Basic Features
+
+- Sign in and out
+- Registration flow
+- Password reset flows
+- Review and Edit user's profile
+
+#### Non-Functional Requirements of the Reference App
+
+- High availability
+- (Optional) Scale out and in automatically to meet increased traffic
+- Support an agile development process, including CI/CD
+- For simplicity, support *only* traditional Web front ends (no SPA, no mobile clients)
+- The design should support
+  - cross-platform development (no platform lock-in) and
+  - cross-platform hosting (no cloud vendor lock-in)
+
+#### Evaluated and leveraged technologies and tools
+
+- CI/CD: GitHub-Actions, CodeBuild
+- Centralized configuration: S3 Service (storage, configuration)
+- Secure Credentials: Secrets Manager (SSM)
+- Container Registry: private registry (S3-based) / ECR
+- Container Orchestrator and Clustering - EKS/ECS
+- Load Balancing (ELB)
+- Data stores: MySql/MariaDB (RDS)
+- Caching, Session management, Queueing (MemoryDB Cluster for Redis)
+
+#### Development Workflow for Dockerized Web Apps
+
+Local Development Workflow for Dockerized Web Apps
+{{< imgproc dev-workflow-docker Resize "1200x" >}}
+Local Dev Workflow
+{{< /imgproc >}}
+
+DevOps Workflow for Dockerized Web Apps
+{{< imgproc devops-workflow-cloud Resize "1200x" >}}
+DevOps Workflow
+{{< /imgproc >}}
