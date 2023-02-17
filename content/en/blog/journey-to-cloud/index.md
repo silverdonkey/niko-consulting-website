@@ -134,7 +134,7 @@ TODO:
 #### Development Workflow for Dockerized Web Apps
 
 Local Development Workflow for Dockerized Web Apps
-{{< imgproc dev-workflow-docker Resize "1200x" >}}
+{{< imgproc local-dev-workflow-docker Resize "1200x" >}}
 Local Dev Workflow
 {{< /imgproc >}}
 
