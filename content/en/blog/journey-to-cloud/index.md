@@ -3,7 +3,7 @@ title: "Solution Concept: Mastering the journey to the Cloud"
 date: 2023-02-14
 weight: 1
 description: >
-  Cloud migration and modernization strategies<br/>
+  Cloud migration and modernization strategies, Cloud native<br/>
 ---
 
 {{% pageinfo %}}
@@ -21,6 +21,15 @@ Solution concept and PoC for Cloud Migration
 - Use Cloud native technologies and tools
   - no vendor lock-in
 - Proof of concept
+
+> What is Cloud native?
+>
+> Cloud native technologies empower organizations bo build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds.
+> Containers, service meshes, microservices, immutable infrastructure, and decllarative APIs exemplify this approach.
+>
+> These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.*
+>
+> Source: [Cloud Native Computing Foundation](https://www.cncf.io/)
 
 ## Cloud Migration Strategies
 
@@ -54,9 +63,8 @@ Strategies for migrating legacy (monolitic) apps
 
 ## Proof of Concept Goals
 - Migrate an existing Web-based application to the Cloud using the 2. Migration Strategy - "Cloud Optimized Migration"
-- Produce a cloud-native reference application on [AWS Cloud](https://aws.amazon.com/) to showcase using Laravel, Docker, GitHub, Cloud managed services and CI/CD pipeline to build a simplistic *minimal* php based application.
+- Produce a cloud native reference application on [AWS Cloud](https://aws.amazon.com/) to showcase using Laravel, Docker, GitHub, Cloud managed services and CI/CD pipeline to build a simplistic *minimal* php based application.
 
----
 ### Migration of a (monolitic) Web App
 Architecture Overview
 {{< imgproc monolitic-web-app-architecture Resize "1200x" >}}
