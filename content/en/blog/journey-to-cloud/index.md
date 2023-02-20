@@ -106,10 +106,12 @@ Microservices, Event-Driven Architecture, API Gateway
 
 ### Reference Web App
 
-TODO:
-
-- add screenshot of the app
-- add link to the GitHub repo
+> **Info**
+>
+> Sources: [AWS ECS Laravel Demo](https://github.com/silverdonkey/aws-ecs-laravel-demo)
+>
+> Main focus: DevOps Workflow, CI/CD
+>
 
 #### Basic Features
 
@@ -146,7 +148,7 @@ Local Development Workflow
 Local Dev Workflow
 {{< /imgproc >}}
 
-DevOps Workflow on AWS
+DevOps Workflow in the Cloud (AWS)
 {{< imgproc devops-workflow-cloud Resize "1200x" >}}
-DevOps Workflow
+DevOps Workflow on AWS
 {{< /imgproc >}}
