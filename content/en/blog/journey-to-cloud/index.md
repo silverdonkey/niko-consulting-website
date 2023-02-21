@@ -73,7 +73,7 @@ Monolitic Web App Architecture, deployt on-premises
 
 Cloud Optimized Architecture - Development/Staging Environment
 {{< imgproc cloud-opt-web-app-architecture-dev Resize "1200x" >}}
-Cloud Optimized Web App Architecture (local develepment and staging)<br />
+Cloud Optimized Web App Architecture (local development and staging)<br />
 *Service Aggregator Pattern / API Gateway
 {{< /imgproc >}}
 
@@ -113,6 +113,15 @@ Microservices, Event-Driven Architecture, API Gateway
 > Main focus: DevOps Workflow, CI/CD
 >
 
+Cloud Optimized Reference Web App - Development/Staging Environment
+{{< imgproc cloud-opt-reference-web-app-architecture-dev Resize "1200x" >}}
+Cloud Optimized Reference Web App Architecture (local development and staging)<br />
+{{< /imgproc >}}
+
+{{< imgproc cloud-opt-reference-web-app-architecture-prod Resize "1200x" >}}
+Cloud Optimized Reference Web App Architecture (production)
+{{< /imgproc >}}
+
 #### Basic Features
 
 - Sign in and out
@@ -136,7 +145,8 @@ Microservices, Event-Driven Architecture, API Gateway
 - Centralized configuration: S3 Service (storage, configuration)
 - Secure Credentials: Secrets Manager (SSM)
 - Container Registry: private registry (S3-based) / ECR
-- Container Orchestrator and Clustering - EKS/ECS
+- Container Orchestrator and Clustering - ECS
+  - ECS with [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html) launch type (serverless)
 - Load Balancing (ELB)
 - Data stores: MySql/MariaDB (RDS)
 - Caching, Session management, Queueing (MemoryDB Cluster for Redis)
