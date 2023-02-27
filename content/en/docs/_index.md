@@ -19,7 +19,7 @@ Location: Frankfurt am Main
 ## Professional Background
 
 IT Consulting:
-* More than 14 years in international IT-Projects across industries, from Start-ups to global players
+* More than 15 years in international IT-Projects across industries, from Start-ups to global players
 * Industries: Automotive, Banking, eCommerce, Insurance, Telecom, Transportation&Logistics
 * Roles: Solutions Architect, Lead System Architect, Consultant
 
