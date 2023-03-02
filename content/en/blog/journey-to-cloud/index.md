@@ -3,7 +3,7 @@ title: "Solution Concept: Mastering the journey to the Cloud"
 date: 2023-02-14
 weight: 1
 description: >
-  Cloud migration and modernization strategies, Cloud native<br/>
+  Cloud migration and modernization strategies, Cloud native, DevOps Workflow<br/>
 ---
 
 {{% pageinfo %}}
