@@ -61,6 +61,11 @@ Strategies for migrating legacy (monolitic) apps
   - API-Management, API-Gateway
   - Highest costs, yet future-proof investment (fine-grained scalability, improved system resiliency, performance and operations), all benefits of Cloud Computing
 
+### References
+- [6 Strategies for Migrating Applications to the Cloud](https://aws.amazon.com/de/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/)
+- [Introduction to Cloud-native applications](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/introduction)
+- [Modernizing legacy apps](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/candidate-apps#modernizing-legacy-apps)
+
 ## Proof of Concept Goals
 - Migrate an existing Web-based application to the Cloud using the 2. Migration Strategy - "Cloud Optimized Migration"
 - Produce a cloud native reference application on [AWS Cloud](https://aws.amazon.com/) to showcase using Laravel, Docker, GitHub, Cloud managed services and CI/CD pipeline to build a simplistic *minimal* php based application.
