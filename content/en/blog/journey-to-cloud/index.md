@@ -1,9 +1,9 @@
 ---
 title: "Solution Concept: Mastering the journey to the Cloud"
-date: 2023-02-14
+date: 2023-02-27
 weight: 1
 description: >
-  Cloud migration and modernization strategies, Cloud native, DevOps Workflow<br/>
+  Cloud migration and modernization strategies, Cloud native, DevOps Workflow, CI/CD<br/>
 ---
 
 {{% pageinfo %}}
@@ -25,7 +25,7 @@ Solution concept and PoC for Cloud Migration
 > What is Cloud native?
 >
 > Cloud native technologies empower organizations bo build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds.
-> Containers, service meshes, microservices, immutable infrastructure, and decllarative APIs exemplify this approach.
+> Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.
 >
 > These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.*
 >
@@ -45,7 +45,7 @@ Strategies for migrating legacy (monolitic) apps
 2. Strategy: Cloud Optimized Migration
   - Requires minimal code changes
   - PaaS model
-  - Containerization of the App and deployment to a Container Orchestration
+  - Containerization of the App and deployment to a Container Orchestrator
   - Decomposition into Microservices
     - Data-Driven Microservices (CRUD)
   - Consuming Cloud managed services like Databases, Caching, Monitoring, Message Queues
