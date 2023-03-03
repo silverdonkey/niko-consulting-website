@@ -37,21 +37,23 @@ Solution concept and PoC for Cloud Migration
 Strategies for migrating legacy (monolitic) apps
 {{< /imgproc >}}
 
-1. Strategy: Cloud Ready Migration (aka "Lift-and-Shift" or "Rehost")
+### 1 Cloud Ready Migration (aka "Lift-and-Shift" or "Rehost")
   - No code changes
   - IaaS model
   - Cloud providers usually provide migration tools like the [AWS MigrationHub](<https://aws.amazon.com/de/migration-hub/>) or [Azure Migrate](https://azure.microsoft.com/de-de/products/azure-migrate/#product-overview)
-  - Quick and therefore cheap, yet does not levareges most of the benefits of Cloud Computing
-2. Strategy: Cloud Optimized Migration
+  - Quick and therefore cheap, yet does not levarege most of the benefits of Cloud Computing
+
+### 2 Cloud Optimized Migration (aka "Improve-and-Move")
+
   - Requires minimal code changes
   - PaaS model
   - Containerization of the App and deployment to a Container Orchestrator
   - Decomposition into Microservices
     - Data-Driven Microservices (CRUD)
   - Consuming Cloud managed services like Databases, Caching, Monitoring, Message Queues
-  - Deployment optimizations that enable key cloud services without changing the core architecture
+  - Deployment optimizations (CI/CD) that enable key cloud services without changing the core architecture
   - Higher costs and overhead, yet better scalability and performance, levareges most of the benefits of Cloud Computing
-3. Strategy: Cloud Native Migration
+### 3 Cloud Native Migration
   - Requires rearchitecting and rewriting code
   - Microservices Architecture (Decomposition into Microservices and Containerization)
     - Data-Driven Microservices (CRUD)
