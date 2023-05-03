@@ -10,7 +10,7 @@ description: >
 
 {{< blocks/section color="white" >}}
 
-<div id="root"></div>
+<div id="root" style="width: 100%;"></div>
 
 {{< /blocks/section>}}
 
@@ -25,11 +25,6 @@ description: >
     }
 
     function ProjectRow({ project }) {
-      const name = project.stocked ? (
-        project.name
-      ) : (
-        <span style={{ color: "red" }}>{project.name}</span>
-      );
 
       return (
         <tr>
@@ -75,7 +70,7 @@ description: >
     function SearchBar({ filterText,  onFilterTextChange}) {
       return (
         <form>
-          <input type="text" placeholder="Search..." value={filterText} onChange={(e) => onFilterTextChange(e.target.value)} />
+          <input type="text" placeholder="Filter by Technology..." value={filterText} onChange={(e) => onFilterTextChange(e.target.value)} />
         </form>
       );
     }
