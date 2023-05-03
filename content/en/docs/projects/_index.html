@@ -1,0 +1,115 @@
+
+---
+title: "Projects"
+linkTitle: "Projects"
+weight: 2
+date: 2022-01-05
+description: >
+  Full list of projects will be provided on request.
+---
+
+{{< blocks/section color="white" >}}
+
+<div id="root"></div>
+
+{{< /blocks/section>}}
+
+<script type="text/babel">
+
+  function ProjectCategoryRow({ category }) {
+      return (
+        <tr>
+          <th colSpan="2">{category}</th>
+        </tr>
+      );
+    }
+
+    function ProjectRow({ project }) {
+      const name = project.stocked ? (
+        project.name
+      ) : (
+        <span style={{ color: "red" }}>{project.name}</span>
+      );
+
+      return (
+        <tr>
+          <td>{project.period}</td>
+          <td>{project.service}</td>
+          <td>{project.industry}</td>
+          <td>{project.tasks}</td>
+          <td>{project.topics}</td>
+          <td>{project.technologies}</td>
+          <td>{project.roles}</td>
+        </tr>
+      );
+    }
+
+    function ProjectTable({ projects, filterText }) {
+      const rows = [];
+
+      projects.forEach((project) => {
+         if ( project.technologies.toLowerCase().indexOf( filterText.toLowerCase() ) === -1 ) {
+          return;
+        }
+        rows.push(<ProjectRow project={project} key={project.id} />);
+      });
+
+      return (
+        <table>
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>Service</th>
+              <th>Industry</th>
+              <th>Tasks</th>
+              <th>Topics</th>
+              <th>Technologies/Tools</th>
+              <th>Roles</th>
+            </tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </table>
+      );
+    }
+
+    function SearchBar({ filterText,  onFilterTextChange}) {
+      return (
+        <form>
+          <input type="text" placeholder="Search..." value={filterText} onChange={(e) => onFilterTextChange(e.target.value)} />
+        </form>
+      );
+    }
+
+    function FilterableProjectTable({ projects }) {
+     const [filterText, setFilterText] = React.useState('');
+      return (
+        <div>
+          <SearchBar filterText={filterText} onFilterTextChange={setFilterText} />
+          <ProjectTable projects={projects} filterText={filterText} />
+        </div>
+      );
+    }
+
+  class App extends React.Component {
+    state = {
+      data: [],
+    }
+
+    // Code is invoked after the component is mounted/inserted into the DOM tree.
+    componentDidMount() {
+      fetch('./data.json')
+        .then((result) => result.json())
+        .then((result) => {
+          this.setState({
+            data: result,
+          })
+        })
+    }
+
+    render() {
+      const { data } = this.state;
+      return <FilterableProjectTable projects={data} />;
+    }
+  }
+  ReactDOM.render(<App />, document.getElementById('root'));
+</script>

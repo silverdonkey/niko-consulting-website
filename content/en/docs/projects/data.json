@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1025",
+    "service": "Cloud Migration",
+    "industry": "Digital Marketing",
+    "period": "01/2023 - now",
+    "tasks": "Concept for migration and modernisation of legace Web applications in the Cloud (no vendor lock-in), PoC - Develop a Cloud-native reference application on AWS, CI/CD, DevOps Workflow, Coaching",
+    "topics": "Cloud Migration- and Modernisation Strategies, Cloud native development, DevOps Workflow, Containerization",
+    "technologies": "AWS Cloud (RDS, MemoryDB, S3, ECR, ECS Fargate, CodeBuild), GitHub Actions, CI/CD, DDD, Microservices, Laravel PHP Framework, Docker, Nginx",
+    "roles": "Consultant, Architect"
+  },
+  {
+    "id": "1024",
+    "service": "Delivery Management",
+    "industry": "Automotive",
+    "period": "03/2021 - 07/2022",
+    "tasks": "Apple",
+    "topics": "API Management, Distribution of Decentralized Data for Microservices based on Kafka, Data Separation and Multitenancy, Real Time Monitoring, Online Remote Update",
+    "technologies": "Azure Cloud, DDD, Microservices, Spring Boot, SwaggerHub, Maven, Git, Bitbucket, Docker, CI/CD, Jira, Confluence",
+    "roles": "Solutions Architect, Delivery Manager"
+  }
+]
