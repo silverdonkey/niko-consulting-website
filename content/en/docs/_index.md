@@ -2,7 +2,9 @@
 ---
 title: "Profile Overview"
 linkTitle: "Profile"
-weight: 2
+menu:
+  main:
+    weight: 10
 date: 2022-01-05
 description: >
   Full profile incl. list of projects will be provided on request.

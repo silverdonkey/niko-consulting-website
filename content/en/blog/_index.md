@@ -2,7 +2,9 @@
 ---
 title: "Blog Overview"
 linkTitle: "Blog"
-weight: 1
+menu:
+  main:
+    weight: 20
 date: 2022-01-05
 description: >
   Blog with demos, solutions, concepts, how-tos, etc.
